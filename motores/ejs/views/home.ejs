@@ -1,0 +1,16 @@
+<%-include('./partials/head')%>
+
+<% if (productos.length == 0 ) { %>
+        <h1>Error</h1>
+
+        <% } else { %>
+            <% productos.forEach(e => { %>
+                <li> 
+                    <%="PRODUCTO: " + e.productname %> 
+                    <%="PRICE: $" + e.price %> 
+                </li>
+            <% }) %>
+<% } %>
+
+<input type="button" onclick="location.href='http://localhost:8080/'; "  value="HOME"/> 
+

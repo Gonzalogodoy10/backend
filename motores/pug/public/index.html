@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+</head>
+<body>
+
+    <h1>Agregar producto a Stock</h1>
+    
+    
+<form method="POST" action="http://localhost:8080/">
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">PRODUCTO: </span>
+        <input name="nombreProducto" type="text" class="form-control" placeholder="Añadir producto" >
+    </div>
+    <hr>
+    <div class="input-group mb-3">
+        <span class="input-group-text">PRECIO:</span>
+        <input name="precioProducto" type="text" class="form-control" placeholder="Añadir precio">
+        <span class="input-group-text">.00</span>
+    </div>
+    <input type="submit"> 
+</form>
+
+<input type="button" onclick="location.href='http://localhost:8080/productos'; "  value="PRODUCTOS"/>
+
+
+
+<body>
+</html>

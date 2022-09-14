@@ -1,0 +1,15 @@
+{{#if productos}}
+<ul>
+    {{#each productos}}
+    <li>
+        PRODUCTO: {{this.productname}}
+        PRECIO: {{this.price}}
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<h1>Error</h1>
+{{/if}} 
+
+
+<input type="button" onclick="location.href='http://localhost:8080'; "  value="HOME"/>
